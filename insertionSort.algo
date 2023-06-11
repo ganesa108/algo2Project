@@ -1,0 +1,13 @@
+procedure insertionSort(arr):
+    VAR
+    i, n, j, key : int;
+    // begin-algo body
+    for i=1 to n-1  //n = .length of array
+        key = arr[i]
+        j=i-1
+        while j >= 0 and arr[j] > key
+            swap arr[j+1] with arr[j]
+            j--
+        endWhile
+    endFor
+endFunction
